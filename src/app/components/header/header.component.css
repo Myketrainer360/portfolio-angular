@@ -1,0 +1,10 @@
+header {
+  border-bottom: 1px solid #e5e7eb; /* Bordo sottile sotto l'header */
+}
+
+/* Pulsante menu hamburger */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

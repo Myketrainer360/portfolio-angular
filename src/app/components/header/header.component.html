@@ -1,0 +1,37 @@
+<header class="bg-white shadow-md py-3 px-8 sticky top-0 z-50">
+  <nav class="flex justify-between items-center max-w-5xl mx-auto">
+    <!-- Nome a sinistra -->
+    <h1 class="text-2xl font-bold">MykeDev 360°</h1>
+
+    <!-- Logo al centro -->
+    <img src="assets/logo.svg" alt="Logo" class="w-12 h-12 mx-auto hidden md:block">
+
+    <!-- Menu per desktop -->
+    <ul class="hidden md:flex space-x-6 text-lg">
+      <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-600">About</a></li>
+      <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+      <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+      <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+
+    <!-- Menu Hamburger per mobile -->
+    <button
+      class="md:hidden text-3xl"
+      (click)="toggleMenu()"
+      aria-label="Toggle navigation menu">
+      &#9776;
+    </button>
+  </nav>
+
+  <!-- Menu mobile -->
+  <ul
+    class="absolute left-0 top-14 w-full bg-white shadow-lg space-y-4 p-6 text-lg md:hidden"
+    *ngIf="menuOpen">
+    <li><a href="#home" class="block hover:text-blue-600">Home</a></li>
+    <li><a href="#about" class="block hover:text-blue-600">About</a></li>
+    <li><a href="#projects" class="block hover:text-blue-600">Projects</a></li>
+    <li><a href="#skills" class="block hover:text-blue-600">Skills</a></li>
+    <li><a href="#contact" class="block hover:text-blue-600">Contact</a></li>
+  </ul>
+</header>
