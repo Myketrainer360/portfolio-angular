@@ -111,7 +111,7 @@ export class FooterComponent {
   ];
 
   contactInfo = [
-    { icon: 'fas fa-envelope', text: 'hello@johndoe.dev' },
+    { icon: 'fas fa-envelope', text: 'hello@myke.rodriguez.dev' },
     { icon: 'fas fa-phone', text: '+39 (333) 123-4567' },
     { icon: 'fas fa-map-marker-alt', text: 'Rome, IT' },
   ];
